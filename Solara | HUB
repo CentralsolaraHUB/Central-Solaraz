@@ -724,38 +724,67 @@ MiscTab:AddButton({
 })
 
 MiscTab:AddButton({
-	Name = "Button!",
+	Name = "Aimbot (PC N MOBILE)",
 	Callback = function()
-      		print("button pressed")
+        loadstring(game:HttpGet("https://pastebin.com/raw/utHyEcbk"))()
   	end    
 })
 
 MiscTab:AddButton({
-	Name = "Button!",
+	Name = "Aimbot and Esp",
 	Callback = function()
-      		print("button pressed")
+        loadstring(game:HttpGet("https://pastebin.com/raw/utHyEcbk"))()
   	end    
 })
 
 MiscTab:AddButton({
-	Name = "Button!",
+	Name = "More UNC",
 	Callback = function()
-      		print("button pressed")
+        loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-MoreUNC-13110"))()
   	end    
 })
 
 MiscTab:AddButton({
-	Name = "Button!",
+	Name = "Fps booster(Makes the games looks bad but)",
 	Callback = function()
-      		print("button pressed")
-  	end    
-})
-
-MiscTab:AddButton({
-	Name = "Button!",
-	Callback = function()
-      		print("button pressed")
-  	end    
+        local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
+        local g = game
+        local w = g.Workspace
+        local l = g.Lighting
+        local t = w.Terrain
+        t.WaterWaveSize = 0
+        t.WaterWaveSpeed = 0
+        t.WaterReflectance = 0
+        t.WaterTransparency = 0
+        l.GlobalShadows = false
+        l.FogEnd = 9e9
+        l.Brightness = 0
+        settings().Rendering.QualityLevel = "Level01"
+        for i, v in pairs(g:GetDescendants()) do
+            if v:IsA("Part") or v:IsA("Union") or v:IsA("CornerWedgePart") or v:IsA("TrussPart") then
+                v.Material = "Plastic"
+                v.Reflectance = 0
+            elseif v:IsA("Decal") or v:IsA("Texture") and decalsyeeted then
+                v.Transparency = 1
+            elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+                v.Lifetime = NumberRange.new(0)
+            elseif v:IsA("Explosion") then
+                v.BlastPressure = 1
+                v.BlastRadius = 1
+            elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") or v:IsA("Sparkles") then
+                v.Enabled = false
+            elseif v:IsA("MeshPart") then
+                v.Material = "Plastic"
+                v.Reflectance = 0
+                v.TextureID = 10385902758728957
+            end
+        end
+        for i, e in pairs(l:GetChildren()) do
+            if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
+                e.Enabled = false
+            end
+        end
+  	end
 })
 
 local PlayerTab = Window:MakeTab({
@@ -7281,77 +7310,27 @@ GameTab:AddButton({
 })
 
 local Section = GameTab:AddSection({
-	Name = "Build a Boat"
+	Name = "BLADE BALL"
 })
 
 GameTab:AddButton({
-	Name = "Ski | HUB",
+	Name = "Nurysium | HUB",
 	Callback = function()
-        loadstring(game:HttpGet(("https://pastebin.com/raw/mT10xnt7"), true))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/flezzpe/Nurysium/main/nury_source.lua'))();
   	end    
 })
 
 GameTab:AddButton({
-	Name = "Amenteso",
+	Name = "Ether | HUB",
 	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Amenteso/robloxscripts/main/Key.lua",true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/6w0s/_6w0s/main/Loader.lua"))()
   	end    
 })
 
 GameTab:AddButton({
-	Name = "Zeerox | HUB",
+	Name = "OP MANUAL SPAM",
 	Callback = function()
-        loadstring(game:HttpGet'https://raw.githubusercontent.com/RunDTM/ZeeroxHub/main/Loader.lua')()
-  	end    
-})
-
-GameTab:AddButton({
-	Name = "BAFTF",
-	Callback = function()
-        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/juywvm/-Roblox-Projects-/main/babft"))()
-  	end    
-})
-
-GameTab:AddButton({
-	Name = "Build a Boat",
-	Callback = function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/0KLv0p2g"))()
-  	end    
-})
-
-local Section = GameTab:AddSection({
-	Name = "Bee Swarm Simulator"
-})
-
-GameTab:AddButton({
-	Name = "Historia | HUB",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Historia00012/HISTORIAHUB
-  	end    
-})
-
-GameTab:AddButton({
-	Name = "Bee Swarm",
-	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/29"))()
-  	end    
-})
-
-GameTab:AddButton({
-	Name = "Baconboss",
-	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/BaconBossScript/BeeSwarmSim/main/BeeSwarmSim"))()
-  	end    
-})
-
-local Section = GameTab:AddSection({
-	Name = "Blade Ball"
-})
-
-GameTab:AddButton({
-	Name = "Visual 3.4 Fixed",
-	Callback = function()
-        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/bc54a02ef03b7586aa05ab425f722312.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/nqxlOfc/SlzAX17vGCub7iRKVmJid61Bg/main/KwKVzV5SgcFBd9fnpLr4lKCg6.lua"))()
   	end    
 })
 
@@ -7365,20 +7344,88 @@ GameTab:AddButton({
 GameTab:AddButton({
 	Name = "Visual V3",
 	Callback = function()
-        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/0aefed07fd25b2369e282001ca3c2838.lua"))() 
+        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/0aefed07fd25b2369e282001ca3c2838.lua"))()
   	end    
 })
 
 GameTab:AddButton({
-	Name = "FFJ | HUB V3",
+	Name = "Visual V3.4 FIXED",
 	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/BladeBallV3.lua"))()
+        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/bc54a02ef03b7586aa05ab425f722312.lua"))()
+  	end    
+})
+
+local Section = GameTab:AddSection({
+	Name = "Build a Boat"
+})
+
+GameTab:AddButton({
+	Name = "Ski | HUB",
+	Callback = function()
+        loadstring(game:HttpGet(("https://pastebin.com/raw/mT10xnt7"), true))()
   	end    
 })
 
 GameTab:AddButton({
-	Name = "Ether | HUB",
+	Name = "Zeerox | HUB",
 	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/6w0s/_6w0s/main/Loader.lua"))()
+        loadstring(game:HttpGet'https://raw.githubusercontent.com/RunDTM/ZeeroxHub/main/Loader.lua')()
   	end    
+})
+
+GameTab:AddButton({
+	Name = "BABFT",
+	Callback = function()
+        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/juywvm/-Roblox-Projects-/main/babft"))()
+  	end    
+})
+
+GameTab:AddButton({
+	Name = "Build a Boat",
+	Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/0KLv0p2g"))()
+  	end    
+})
+
+local Section = GameTab:AddSection({
+	Name = "Bee swarm Simulator"
+})
+
+GameTab:AddButton({
+	Name = "HISTORIA | HUB",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Historia00012/HISTORIAHUB/main/BSS%20FREE"))()
+  	end    
+})
+
+GameTab:AddButton({
+	Name = "29",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/29"))()
+  	end    
+})
+
+local Section = GameTab:AddSection({
+	Name = "Counter Blox"
+})
+
+GameTab:AddButton({
+	Name = "jaran.vip",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fliskScript/jaran.vip/main/free.lua"))()
+    end
+})
+
+GameTab:AddButton({
+	Name = "Sirex ware",
+	Callback = function()
+        ladstring(game:HttpGet("https://raw.githubusercontent.com/skyteg99/Sirex_Wave_v3_free/main/Sirex_Ware_v3%20"))()
+  	end    
+})
+
+GameTab:AddButton({
+	Name = "3",
+	Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/vbVE6W69"))() 
+    end
 })
