@@ -7,14 +7,45 @@ local ChangeTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local Section = ChangeTab:AddSection({
-	Name = "Nothing yet..."
-})
+local paragraphText = [[
+Version 1.0.1 Update Changelog Highlights
+
+Universal Changes:
+(+) FPS BOOSTER
+(+)  UNC 
+(+)  AIMBOT 
+(+)  AIMBOT GUI
+
+Blade Ball Script Enhancements
+(+) NURYSIUM | HUB
+(+) ETHER | HUB
+(+) OP MANUAL SPAM
+(+) VISUAL V2
+(+) VISUAL V3
+(+) VISUAL V3.4
+
+Build a Boat Improvements
+(+) SKI | HUB
+(+) ZEEROX | HUB
+(+) BABFT
+(+) BUILD A BOAT
+
+Bee Swarm Simulator Updates
+(+) 29
+(+) HISTORIA | HUB
+
+Counter Blox Enhancements
+(+) JARAN.VIP
+(+) SIREX WARE
+(+) 3
+]]
+
+ChangeTab:AddParagraph("CHANGELOGS V1.0.1", paragraphText)
 
 local MiscTab = Window:MakeTab({
-    Name = "Information",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
+	Name = "Information",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
 })
 
 MiscTab:AddLabel("Disclaimer: The scripts here are sourced from the internet,")
